@@ -24,14 +24,14 @@ Login Page To Be Open
 
 Input Username
     [Arguments]    ${username}
-	Input Text    xpath=//*[@id="username"]    ${username}
+	Input Text    id=username    ${username}
 
 Input Pass-Word
     [Arguments]    ${password}
-	Input Text    xpath=//*[@id="password"]   ${password}
+	Input Text    id=password   ${password}
 
 Submit Credentials
-    Click Button    xpath=//*[@id="submit"]
+    Click Button    id=submit
 
 Login Success Page Should Be Open
     Location Should Be    ${LOGIN SUCCESS URL}
